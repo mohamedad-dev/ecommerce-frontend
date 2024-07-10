@@ -15,9 +15,12 @@ import Viewscategorie from "./components/scategories/Viewscategorie";
 import Insertscategorie from "./components/scategories/Insertscategorie";
 import Editscategorie from "./components/scategories/Editscategorie";
 
+import Menu from "./components/shared/Menu";
+
 function App() {
   return (
     <BrowserRouter>
+      <Menu />
       <Routes>
         <Route path="articles" element={<Listarticles />}></Route>
         <Route path="articles/:id" element={<Viewarticle />}></Route>
